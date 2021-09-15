@@ -7,7 +7,9 @@ const Header = () => {
      <h1 className="texts">Real Mardid Auction 2021</h1>
      </div>
      <div className="liv">
-       <img className="img-fluid" src="https://1.bp.blogspot.com/-IXm8-M7Mj0g/Vi-J6krHnVI/AAAAAAAEreA/gHKRaUZWJco/s1600/Real%2BMadrid%2BCF%2B2.gif" alt=" "/>
+       <img className="img-fluid" src="http://www.espn.com.mx/2003/photos2017/0521/realmadrid-campeon.gif" alt=" "/>
+       <br/>
+       <br/>
      </div>
         </div>
     );
