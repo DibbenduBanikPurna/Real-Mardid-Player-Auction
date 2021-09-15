@@ -6,6 +6,21 @@
   height: 40vmin;
   pointer-events: none;
 }
+.texts{
+  border: 1px solid red;
+  width: 50%;
+  margin: auto;
+
+  background-color: white;
+  padding: 15px;
+  color: black;
+  border-radius: 8px;
+}
+
+.box{
+  height: 250px;
+  background-color: blue;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
