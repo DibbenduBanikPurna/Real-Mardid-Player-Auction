@@ -27,7 +27,7 @@ const Card = () => {
             <div className="row mt-5 pt-5">
 
            {
-               isLoading ? <img src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> : 
+               isLoading ? <img className="img-fluid" style={{width:'150px',margin:'auto'}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> : 
                
                
                players.map(player=>{

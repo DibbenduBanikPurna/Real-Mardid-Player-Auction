@@ -7,8 +7,9 @@
   border: 1px solid red;
   width: 50%;
   margin: auto;
+  background-image: linear-gradient(red, yellow);
 
-  background-color: white;
+  /* background-color: white; */
   padding: 15px;
   color: black;
   border-radius: 8px;

@@ -19,7 +19,7 @@ useEffect(()=>{
             <h2 className="pt-4 pb-4 bg-info">La Liga highlights SHow last Week</h2>
          
             {
-                isLoading ?<img className="img-fluid" style={{marginTop:"50px"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
+                isLoading ?<img className="img-fluid" style={{width:'260px',margin:"auto"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
                 match.filter((m)=>{
                    return m.competition ==="SPAIN: La Liga"
                 }).map((match)=>{

@@ -17,8 +17,13 @@ const TopScore = () => {
     
     return (
         <div>
-            <h4>Scorer</h4>
-            <h2>https://apifootball.com/documentation/#Livescore</h2>
+
+          {isLoading ? <img className="img-fluid" style={{margin:"auto"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :<>
+          
+            <h4 className="text-primary">Top Scorer on La Liga</h4>
+            <br/>
+            {/* <p>https://apifootball.com/documentation/#Livescore</p> */}
+            <a className="text-info" rel="noreferrer" target="_blank" href="https://totalsportek.to/">Live Footbal Match Link</a>
             <table className="table">
           <thead className="thead-light">
             <tr>
@@ -36,13 +41,16 @@ const TopScore = () => {
           </thead>
           <tbody>
             {
-              isLoading ? <img className="img-fluid" style={{marginTop:"50px"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
+              // isLoading ? <img className="img-fluid" style={{margin:"auto"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
                 scorer.map((scorer)=>{
                     return <TopScorerDetail key={scorer.player_place} scorer={scorer} />
                 })
             }
             </tbody>
           </table>
+          </>
+          }
+
         </div>
     );
 };

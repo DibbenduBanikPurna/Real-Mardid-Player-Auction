@@ -15,6 +15,7 @@ const Result = () => {
     },[])
     return (
         <div className="container">
+          {isLoading ? <img className="img-fluid" style={{marginTop:"50px"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :<>
             <h2>La Liga<br/><span className="text-primary" style={{fontSize:'18px'}}>2021/2022 season</span></h2>
             <table className="table">
           <thead className="thead-light">
@@ -32,14 +33,14 @@ const Result = () => {
           </thead>
           <tbody>
             {
-              isLoading ? <img className="img-fluid" style={{marginTop:"50px"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
+              // isLoading ? <img className="img-fluid" style={{marginTop:"50px"}} src="https://gifimage.net/wp-content/uploads/2017/09/ajax-loading-gif-transparent-background-8.gif" alt=""/> :
                 res.map(res=>{
                     return <ResultDetail key={res.team} res={res}/>
                 })
             }
              </tbody>
           </table>
-            
+          </>}
             
         </div>
     );
